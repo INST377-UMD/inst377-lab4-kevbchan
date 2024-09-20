@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>INST377- Lab 4</title>
+    <link rel="stylesheet" href="Lab4.html.css">
+    <script defer src="Lab4.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">INST377 Lab 4</h1>
+    </header>
+
+    <div class="container">
+        <!-- Alert Me Section -->
+        <section class="section alert-section">
+            <h2>Alert Me Section</h2>
+            <form id="alertForm" onsubmit="event.preventDefault(); alertNoti();">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <button type="submit">Alert Me!</button>
+            </form>
+        </section>
+
+        <!-- Change Color Section -->
+        <section class="section color-section">
+            <h2>Change Color Section</h2>
+            <button id="colorButton" onclick="changeColor()">Change Color</button>
+        </section>
+
+        <!-- Text Tester Section -->
+        <section class="section text-tester-section">
+            <h2>Text Tester Section</h2>
+            <form id="validateForm" onsubmit="event.preventDefault(); textTester();">
+                <input type="text" id="textToValidate">
+                <button type="submit">Validate Text</button>
+            </form>
+        </section>
+
+        <!-- Add Text Section -->
+        <section class="section add-text-section">
+            <h2>Add Text Section</h2>
+            <button id="addTextButton" onclick="textAdd()">Add Text</button>
+        </section>
+    </div>
+</body>
+</html>
